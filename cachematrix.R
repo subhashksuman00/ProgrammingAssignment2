@@ -1,7 +1,12 @@
-## Put comments here that give an overall description of what your
-## functions do
+# cachematrix.R
+# example usage:
+#> source("cachematrix.R")
+#> aSquareMatrix <- makeCacheMatrix(matrix(0:8, 8, 8))
+#> squareMatrix$getMatrix()
+#> aSquareMatrix$getCache() # will return NULL for the 1st time
+#> cacheSolve(aSquareMatrix)
+#> aSquareMatrix$getCache() # will return the solution
 
-## Write a short comment describing this function
 
 makeCacheMatrix <- function(x = matrix()) {
   
